@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes"
+import Link from "next/link"
 
 
 export default function Blog() {
@@ -9,16 +10,16 @@ export default function Blog() {
       <div className="sticky top-0 z-50 ">
 
         <nav className="flex items-center justify-between py-5 mx-10 ">
-          <a href="/">
+          <Link href="/">
             <span className="text-3xl font-semibold cursor-pointer">Thilak Shriyan </span>
-          </a>
+          </Link>
 
 
 
           <ul className="flex space-x-10 ">
             <li className="text-lg cursor-pointer font- semibold">Work</li>
             <li className="text-lg cursor-pointer font- semibold">About</li>
-            <a href="/blog"> <li className="text-lg cursor-pointer font- semibold">Blog</li></a>
+            <Link href="/blog"> <li className="text-lg cursor-pointer font- semibold">Blog</li></Link>
             <li className="text-lg cursor-pointer font- semibold">Contact</li>
           </ul>
         </nav>

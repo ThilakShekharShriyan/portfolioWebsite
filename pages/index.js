@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes"
+import Link from "next/link"
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
           <ul className="flex space-x-10 ">
             <li className="text-lg cursor-pointer font- semibold">Work</li>
             <li className="text-lg cursor-pointer font- semibold">About</li>
-            <a href="/blog"> <li className="text-lg cursor-pointer font- semibold">Blog</li></a>
+            <Link href="/blog"> <li className="text-lg cursor-pointer font- semibold">Blog</li></Link>
             <li className="text-lg cursor-pointer font- semibold">Contact</li>
           </ul>
         </nav>
@@ -74,33 +75,33 @@ export default function Home() {
             <li className="text-2xl">
               <span className="flex space-x-2">
                 <img src={theme === 'light' ? 'linkedin_light.png' : 'linkedin_dark.png'} className="h-8 " />
-                <a>LinkedIn</a>
+                <Link>LinkedIn</Link>
               </span>
               </li>
 
             <li className="text-2xl">
               <span className="flex space-x-2">
                 <img src={theme === 'light' ? 'mail_light.png' : 'mail_dark.png'} className="h-8 " />
-                <a>Email</a>
+                <Link>Email</Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
                 <img src={theme === 'light' ? 'phone_light.png' : 'phone_dark.png'} className="h-8 " />
-                <a>Phone</a>
+                <Link>Phone</Link>
               </span>
             </li>
             
             <li className="text-2xl">
               <span className="flex space-x-2">
                 <img src={theme === 'light' ? 'instagram_light.png' : 'instagram_dark.png'} className="h-8 " />
-                <a>Instagram</a>
+                <Link>Instagram</Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
                 <img src={theme === 'light' ? 'youtube.png' : 'youtube_dark.png'} className="h-8 " />
-                <a>Youtube</a>
+                <Link>Youtube</Link>
               </span>
             </li>
 
