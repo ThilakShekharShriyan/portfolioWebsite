@@ -38,7 +38,7 @@ export default function Home() {
                 <span className="text-2xl">Engineer</span>
               </div>
             </div>
-            <img src="/some.png" className="self-end h-72"></img>
+            <Image src="/some.png" className="self-end h-72"></Image>
           </div>
 
         </div>
@@ -74,33 +74,33 @@ export default function Home() {
            
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <img src={theme === 'light' ? 'linkedin_light.png' : 'linkedin_dark.png'} className="h-8 " />
+                <Image src={theme === 'light' ? 'linkedin_light.png' : 'linkedin_dark.png'} className="h-8 " />
                 <Link>LinkedIn</Link>
               </span>
               </li>
 
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <img src={theme === 'light' ? 'mail_light.png' : 'mail_dark.png'} className="h-8 " />
+                <Image src={theme === 'light' ? 'mail_light.png' : 'mail_dark.png'} className="h-8 " />
                 <Link>Email</Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <img src={theme === 'light' ? 'phone_light.png' : 'phone_dark.png'} className="h-8 " />
+                <Image src={theme === 'light' ? 'phone_light.png' : 'phone_dark.png'} className="h-8 " />
                 <Link>Phone</Link>
               </span>
             </li>
             
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <img src={theme === 'light' ? 'instagram_light.png' : 'instagram_dark.png'} className="h-8 " />
+                <Image src={theme === 'light' ? 'instagram_light.png' : 'instagram_dark.png'} className="h-8 " />
                 <Link>Instagram</Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <img src={theme === 'light' ? 'youtube.png' : 'youtube_dark.png'} className="h-8 " />
+                <Image src={theme === 'light' ? 'youtube.png' : 'youtube_dark.png'} className="h-8 " />
                 <Link>Youtube</Link>
               </span>
             </li>

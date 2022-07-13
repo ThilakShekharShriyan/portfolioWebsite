@@ -24,24 +24,24 @@ export default function Blog() {
           </ul>
         </nav>
       </div>
-      <div class="flex justify-center">
-        <div class=" space-y-16">
+      <div className="flex justify-center">
+        <div className="space-y-16 ">
 
-        <div class="space-y-4">
+        <div className="space-y-4">
 
-<div class="h-[35rem] w-[65rem] bg-teal-200 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
+<div className="h-[35rem] w-[65rem] bg-teal-200 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
 </div>
-<div class="space-y-4">
+<div className="space-y-4">
 
-            <div class="h-[35rem] w-[65rem] bg-pink-200 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
+            <div className="h-[35rem] w-[65rem] bg-pink-200 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
           </div>
-          <div class="space-y-4">
+          <div className="space-y-4">
 
-            <div class="h-[35rem] w-[65rem] bg-teal-300  rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
+            <div className="h-[35rem] w-[65rem] bg-teal-300  rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out"></div>
           </div>
-          <div class="space-y-4">
+          <div className="space-y-4">
 
-            <div class="h-[35rem] w-[65rem] bg-pink-200  rounded-lg shadow-xl transform  hover:-translate-y-2  hover:-translate-x-2  transition-transform duration-500 ease-in-out"></div>
+            <div className="h-[35rem] w-[65rem] bg-pink-200  rounded-lg shadow-xl transform  hover:-translate-y-2  hover:-translate-x-2  transition-transform duration-500 ease-in-out"></div>
           </div>
           
 
