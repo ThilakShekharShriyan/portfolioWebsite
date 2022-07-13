@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import Image from "next/image"
 
-export default function Home() {
+export default function Home({ props }) {
   const { theme, setTheme } = useTheme()
   return (
     <div className="">
@@ -18,7 +18,9 @@ export default function Home() {
           <ul className="flex space-x-10 ">
             <li className="text-lg cursor-pointer font- semibold">Work</li>
             <li className="text-lg cursor-pointer font- semibold">About</li>
-            <Link href="/blog"> <li className="text-lg cursor-pointer font- semibold">Blog</li></Link>
+            <Link href="/blog">
+              <a><li className="text-lg cursor-pointer font- semibold">Blog</li>
+              </a></Link>
             <li className="text-lg cursor-pointer font- semibold">Contact</li>
           </ul>
         </nav>
@@ -39,14 +41,14 @@ export default function Home() {
                 <span className="text-2xl">Engineer</span>
               </div>
             </div>
-            <Image src="/some.png" className="self-end h-72"></Image>
+            <Image alt="" src="/some.png" height="300" width="300" className="self-end h-72"></Image>
           </div>
 
         </div>
 
 
       </div>
-      
+
 
 
       <div className="m-10 ">
@@ -72,37 +74,41 @@ export default function Home() {
 
         <div className=" pr-72">
           <ul className="items-center space-y-10 font-semibold ">
-           
-            <li className="text-2xl">
-              <span className="flex space-x-2">
-                <Image src={theme === 'light' ? 'linkedin_light.png' : 'linkedin_dark.png'} className="h-8 " />
-                <Link>LinkedIn</Link>
-              </span>
-              </li>
 
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <Image src={theme === 'light' ? 'mail_light.png' : 'mail_dark.png'} className="h-8 " />
-                <Link>Email</Link>
+                <div className="h-8">
+                  <Image alt="" src={theme === 'light' ? '/linkedin_light.png' : '/linkedin_dark.png'} height="20" width="20" className="" />
+                </div>
+                <Link href="">
+                  <a>LinkedIn</a>
+                </Link>
+              </span>
+            </li>
+
+            <li className="text-2xl">
+              <span className="flex space-x-2">
+                <div className="h-8"><Image alt="/" src={theme === 'light' ? '/mail_light.png' : '/mail_dark.png'} height="20" width="20" className="" /></div>
+                <Link href={""}><a>Email</a></Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <Image src={theme === 'light' ? 'phone_light.png' : 'phone_dark.png'} className="h-8 " />
-                <Link>Phone</Link>
+                <div className="h-8"><Image alt="" src={theme === 'light' ? '/phone_light.png' : '/phone_dark.png'} height="20" width="20" className="" /></div>
+                <Link href={""}><a>Phone</a></Link>
               </span>
             </li>
-            
+
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <Image src={theme === 'light' ? 'instagram_light.png' : 'instagram_dark.png'} className="h-8 " />
-                <Link>Instagram</Link>
+                <div className="h-8"><Image alt="" src={theme === 'light' ? '/instagram_light.png' : '/instagram_dark.png'} height="20" width="20" className="" /></div>
+                <Link href={""} ><a>Instagram</a></Link>
               </span>
             </li>
             <li className="text-2xl">
               <span className="flex space-x-2">
-                <Image src={theme === 'light' ? 'youtube.png' : 'youtube_dark.png'} className="h-8 " />
-                <Link>Youtube</Link>
+                <div className="h-8"> <Image alt="" src={theme === 'light' ? '/youtube.png' : '/youtube_dark.png'} height="20" width="20" className="" /></div>
+                <Link href={""}><a>Youtube</a></Link>
               </span>
             </li>
 
