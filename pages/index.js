@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes"
 import Link from "next/link"
 
+import Image from "next/image"
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
