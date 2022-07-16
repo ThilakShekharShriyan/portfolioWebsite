@@ -33,10 +33,10 @@ export default function Blog({ props }) {
         <div className="space-y-16 ">
 
           {
-            post.map((posts) => (
+            post.map((posts ) => (
 
 
-              <Link href={`/blog/${posts.id}`}>
+              <Link href={`/blog/${posts.id}`} key={posts.id}>
                 <div className="h-[35rem] w-[65rem] grid place-items-center  bg-slate-100 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out">
                   <div className="">
 
