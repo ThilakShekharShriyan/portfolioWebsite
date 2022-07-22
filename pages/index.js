@@ -16,28 +16,8 @@ export default function Home({ props }) {
 
       <CenterIntro/>
       <FrontpageDescription/>
-      
-      
-
-
-
-      
-     
       <Acheivements />
-
-
       <Socials/>
-
-      <div className="h-96"> 
-        
-      </div>
-
-
-      
-
-
-
-
 
     </div>
 

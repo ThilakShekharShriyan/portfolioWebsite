@@ -8,40 +8,26 @@ export default function Blog({ props }) {
   const post = [{ title: "Fire base Authentication", id: 1, url: "/firebaseidk.png" }, { title: "Google Foo Bar", id: 2, url: "/google_logo.png" }, { title: "Fresh", id: 3, url: "https://images.freeimages.com/images/large-previews/211/yellow-italian-car-1195655.jpg" }, { title: "Apple Products", id: 4, url: "https://images.freeimages.com/images/large-previews/c43/home-1257617.jpg" }]
   return (
     <div className="">
-
-      <div className="sticky top-0 z-50 ">
-
-        <nav className="flex items-center justify-between py-5 mx-10 ">
-          <Link href="/">
-            <a><span className="text-3xl font-semibold cursor-pointer">Thilak Shriyan </span></a>
-          </Link>
-
-
-
-          <ul className="flex space-x-10 ">
-            <li className="text-lg cursor-pointer font- semibold">Work</li>
-            <li className="text-lg cursor-pointer font- semibold">About</li>
-            <li className="text-lg cursor-pointer font- semibold">Blog</li>
-            <li className="text-lg cursor-pointer font- semibold">Contact</li>
-          </ul>
-        </nav>
+      
+      <div className="flex justify-start p-5">
+        <h1 className="pl-10 text-xl text-white md:text-3xl md:pl-20">BLOGS</h1>
       </div>
-      <div className="p-10 space-y-6">
-        <h1 className="pl-10 text-5xl font-semibold">BLOGS</h1>
-      </div>
+      
       <div className="flex justify-center">
-        <div className="space-y-16 ">
+        <div className="w-10/12 px-5 space-y-16">
 
           {
-            post.map((posts ) => (
+            post.map((posts) => (
 
 
               <Link href={`/blog/${posts.id}`} key={posts.id}>
-                <div className="h-[35rem] w-[65rem] grid place-items-center  bg-slate-100 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out">
-                  <div className="">
+                <div className="grid px-5 transition-transform duration-500 ease-in-out transform bg-[#FF7597] rounded-lg shadow-xl place-items-center hover:-translate-y-2 hover:-translate-x-2">
+                  <div className="flex flex-col items-center justify-center">
 
-                    <Image alt =" " src={posts.url} height="200px" width="500px" layout="fixed" className="rounded-lg" />
-                    <h1 className="text-3xl font-semibold text-center">{posts.title}</h1>
+                    <div className="relative w-32 h-40 md:h-72 md:w-96">
+                    <Image alt="" src={posts.url} layout="fill"/>
+                    </div>
+                    <h1 className="text-xl font-semibold text-center">{posts.title}</h1>
 
                   </div>
 
@@ -57,12 +43,7 @@ export default function Blog({ props }) {
 
         </div>
       </div>
-      <div className="h-96">
 
-      </div>
-      <div className="h-96">
-
-      </div>
 
     </div>
 

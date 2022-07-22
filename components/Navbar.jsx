@@ -11,20 +11,20 @@ export const NavigationBar = () => {
     const { theme, setTheme } = useTheme()
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="sticky top-0 p-5 ">
+        <div className="sticky top-0 bg-white p-7 dark:bg-[#121212] ">
             <nav className="w-full ">
                 <div className="w-full">
                     <div className="flex items-center w-full ">
                         <div className="flex items-center justify-between w-full mx-20">
                             <div className="flex items-center justify-center flex-shrink-0 ">
                                 <button onClick={() => setTheme(theme == 'light' ? 'dark' : 'light')}>
-                                    <span className="text-3xl font-semibold cursor-pointer">Thilak Shriyan </span>
+                                    <span className="text-2xl font-semibold cursor-pointer md:text-4xl">Thilak Shriyan </span>
                                 </button>
                             </div>
                             <div className="hidden md:block ">
                                 <div className="flex items-baseline ml-10 space-x-4">
                                     <Link
-                                        href=""
+                                        href="/"
                                         activeClass="Home"
                                         to="about"
                                         smooth={true}
@@ -46,7 +46,7 @@ export const NavigationBar = () => {
                                         About
                                     </Link>
                                     <Link
-                                        href=""
+                                        href="/blog"
                                         activeClass="Blog"
                                         to="work"
                                         smooth={true}
@@ -137,7 +137,7 @@ export const NavigationBar = () => {
                                 <ul className="flex flex-col items-center space-y-6">
                                     <li>
                                         <Link
-                                            href="/home"
+                                            href="/"
                                             activeClass="home"
                                             to="home"
                                             smooth={true}
