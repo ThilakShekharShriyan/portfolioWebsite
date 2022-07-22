@@ -40,7 +40,7 @@ export default function Blog({ props }) {
                 <div className="h-[35rem] w-[65rem] grid place-items-center  bg-slate-100 rounded-lg shadow-xl transform  hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-500 ease-in-out">
                   <div className="">
 
-                    <Image src={posts.url} height="200px" width="500px" layout="fixed" className="rounded-lg" />
+                    <Image alt =" " src={posts.url} height="200px" width="500px" layout="fixed" className="rounded-lg" />
                     <h1 className="text-3xl font-semibold text-center">{posts.title}</h1>
 
                   </div>
