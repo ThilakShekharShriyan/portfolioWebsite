@@ -7,6 +7,7 @@ import Blogtile from "../../components/blogTile"
 
 
 
+
 export default function Blog({ blogs }) {
   const { theme, setTheme } = useTheme()
   console.log(blogs)
@@ -22,7 +23,7 @@ export default function Blog({ blogs }) {
      {
       blogs.bLogs.map((blog , index)=>(
         
-         <Blogtile blog={blog} key={index} />
+        <Blogtile  blog={blog} key={index}/>
       ))
      }
      </div>
