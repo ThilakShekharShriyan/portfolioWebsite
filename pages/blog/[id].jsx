@@ -1,8 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-const Blog = ({postslog}) => {
+const Blog = () => {
 
-    console.log(postslog)
     return (
         <div className="">
 
@@ -162,11 +161,3 @@ export default Blog
 
 
 
-export async function getStaticProps(){
-    const blog = (await getBlog(postslog)) || []
-  
-    return {
-      props : {blog}
-    }
-  }
-  
