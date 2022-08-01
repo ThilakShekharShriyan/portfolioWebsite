@@ -2,7 +2,7 @@ import { useTheme } from "next-themes"
 import Link from "next/link"
 import Image from "next/image"
 import { getBlogs } from "../../services"
-import Blogtile from "../../components/blogTile.jsx"
+import Blogtile from "../../components/BlogTile.jsx"
 
 
 
