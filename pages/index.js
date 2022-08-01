@@ -8,6 +8,7 @@ import Socials from "../components/Socials"
 
 import CenterIntro from "../components/CenterIntro"
 import FrontpageDescription from "../components/FrontpageDescription"
+import Projects from "../components/Projects"
 
 export default function Home({ props }) {
   const { theme, setTheme } = useTheme()
@@ -17,7 +18,9 @@ export default function Home({ props }) {
       <CenterIntro/>
       <FrontpageDescription/>
       <Acheivements />
+      <Projects/>
       <Socials/>
+      
 
     </div>
 

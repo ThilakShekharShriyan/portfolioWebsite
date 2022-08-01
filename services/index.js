@@ -26,11 +26,11 @@ export const getBlogs = async () => {
 
 }
 
-export const getBlog = async (postslog) => {
+export const getBlog = async (postslug) => {
 
     const query = gql`
     query MyQuery {
-        bLogs(where: {postslog: ${postslog}}) {
+        bLogs(where: {postslog: ${postslug}}) {
           id
           title
           image {

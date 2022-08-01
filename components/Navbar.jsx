@@ -11,7 +11,7 @@ export const NavigationBar = () => {
     const { theme, setTheme } = useTheme()
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="sticky top-0 bg-white p-7 dark:bg-[#121212] ">
+        <div className="sticky top-0 bg-white p-7 dark:bg-[#121212] z-50">
             <nav className="w-full ">
                 <div className="w-full">
                     <div className="flex items-center w-full ">

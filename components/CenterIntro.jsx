@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 const CenterIntro = () => {
     return (
-        <div className='px-10 py-24'>
+        <div className='px-10 py-24 m-10'>
 
             <div className='w-full'>
                 <div className='flex flex-col items-center w-full md:flex-row md:justify-center'>
