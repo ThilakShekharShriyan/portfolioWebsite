@@ -46,7 +46,7 @@ export const NavigationBar = () => {
                                         About
                                     </Link>
                                     <Link
-                                        href="/blog"
+                                        href="/"
                                         activeClass="Blog"
                                         to="work"
                                         smooth={true}
@@ -150,7 +150,7 @@ export const NavigationBar = () => {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/about"
+                                            href="/"
                                             activeClass="about"
                                             to="about"
                                             smooth={true}
@@ -164,7 +164,7 @@ export const NavigationBar = () => {
 
                                     <li>
                                         <Link
-                                            href="/blog"
+                                            href="/"
                                             activeClass="work"
                                             to="work"
                                             smooth={true}
@@ -178,7 +178,7 @@ export const NavigationBar = () => {
 
                                     <li>
                                         <Link
-                                            href="/contact"
+                                            href="/"
                                             activeClass="work"
                                             to="work"
                                             smooth={true}
