@@ -14,10 +14,7 @@ const CenterIntro = () => {
                             <span className="text-2xl font-semibold text-center md:font-normal md:text-5xl">Hi ! My name is Thilak Shriyan</span>
 
                         </div>
-                        <div className="">
-                            <span className="text-base md:text-3xl">I am an </span>
-                            <span className="text-base md:text-3xl">Engineer</span>
-                        </div>
+                        <span className="text-xl md:text-3xl">Computer Science Engineer</span>
                     </div>
                     <div className="flex items-center justify-between w-max">
 

@@ -8,13 +8,13 @@ Deployed the website using VERCEL which performs continous build and shipping.
 https://vercel.com/
 
 
-[#03DAC6]
-[#60C689]
-[#E91E63]
-[#C21858]
-[#9C2760]
-[#276AB0]
-[#276880]
+[#03DAC6]1
+[#60C689]2
+[#E91E63]3
+[#C21858]4
+[#9C2760]5
+[#276AB0]6
+[#276880]7
 
 
 
