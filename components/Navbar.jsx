@@ -11,7 +11,7 @@ export const NavigationBar = () => {
     const { theme, setTheme } = useTheme()
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="sticky top-0 bg-white p-7 dark:bg-[#121212] z-50">
+        <div className="sticky top-0 bg-white p-3 dark:bg-[#121212] z-50">
             <nav className="w-full ">
                 <div className="w-full">
                     <div className="flex items-center w-full ">
@@ -19,10 +19,11 @@ export const NavigationBar = () => {
                             <div className="flex items-center justify-center flex-shrink-0 ">
                                 <button onClick={() => setTheme(theme == 'light' ? 'dark' : 'light')}>
                                     <span className="text-2xl font-semibold cursor-pointer md:text-4xl">Thilak Shriyan </span>
+
                                 </button>
                             </div>
                             <div className="hidden md:block ">
-                                <div className="flex items-baseline ml-10 space-x-4">
+                                <div className="flex items-center ml-10 space-x-4">
                                     <Link
                                         href="/"
                                         activeClass="Home"
@@ -68,6 +69,13 @@ export const NavigationBar = () => {
                                     >
                                         Contact
                                     </Link>
+                                    <button onClick={() => setTheme(theme == 'light' ? 'dark' : 'light')}>
+                                        <div className="relative w-24 h-12 p-5 m-5 md:h-[2px] md:w-[2px]">
+                                            <Image alt="" src={theme === 'light' ? '/moon.png' : '/sun.png'} layout="fill" />
+                                        </div>
+                                    </button>
+
+
 
                                 </div>
                             </div>
