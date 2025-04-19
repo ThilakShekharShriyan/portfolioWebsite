@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTheme } from "next-themes"
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/image"
 
 const Projects = () => {
     const { theme, setTheme } = useTheme()
@@ -28,7 +28,11 @@ const Projects = () => {
 
                         <div className=''>
                             <div className="relative w-24 h-12 p-5 m-5 md:h-24 md:w-44">
-                                <Image alt="" src={theme === 'light' ? '/hpLight.png' : '/hpDark.png'} layout="fill" />
+                                <Image
+                                    alt=""
+                                    src={theme === 'light' ? '/hpLight.png' : '/hpDark.png'}
+                                    fill
+                                    sizes="100vw" />
                             </div>
                             <p>
                                 Swarm Learning is a decentralized, privacy-preserving Machine Learning framework. This framework utilizes the computing power at, or near, the distributed data sources to run the Machine Learning algorithms that train the models. It uses the security of a blockchain platform to share learnings with peers in a safe and secure manner. In Swarm Learning, training of the model occurs at the edge, where data is most recent, and where prompt, data-driven decisions are mostly necessary.
@@ -36,7 +40,7 @@ const Projects = () => {
                         </div>
                         <div>
                             <div className="relative w-64 h-64 m-5 md:h-[400px] md:w-[400px]">
-                                <Image alt="" src="/Swarmlearning.png" layout="fill" />
+                                <Image alt="" src="/Swarmlearning.png" fill sizes="100vw" />
                             </div>
                         </div>
                     </div>
@@ -89,7 +93,7 @@ const Projects = () => {
 
             </div>
         </section>
-    )
+    );
 }
 
 export default Projects

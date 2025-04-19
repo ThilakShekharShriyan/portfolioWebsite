@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/image"
 
 import { Transition } from "@headlessui/react";
 
@@ -71,7 +71,11 @@ export const NavigationBar = () => {
                                     </Link>
                                     <button onClick={() => setTheme(theme == 'light' ? 'dark' : 'light')}>
                                         <div className="relative w-24 h-12 p-5 m-5 md:h-[2px] md:w-[2px]">
-                                            <Image alt="" src={theme === 'light' ? '/moon.png' : '/sun.png'} layout="fill" />
+                                            <Image
+                                                alt=""
+                                                src={theme === 'light' ? '/moon.png' : '/sun.png'}
+                                                fill
+                                                sizes="100vw" />
                                         </div>
                                     </button>
 
@@ -205,8 +209,5 @@ export const NavigationBar = () => {
                 </Transition>
             </nav>
         </div>
-
-
-
-    )
+    );
 }

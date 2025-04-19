@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTheme } from "next-themes"
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/image"
 
 const Socials = () => {
   const { theme, setTheme } = useTheme()
@@ -24,10 +24,14 @@ const Socials = () => {
                 <div className="flex flex-col items-center justify-center p-2 space-x-2 md:flex-row">
 
                     <div className='relative w-8 h-8 md:h-10 md:w-10'>
-                       <Image alt="/" src={theme === 'light' ? '/linkedin_light.png' : '/linkedin_dark.png'} layout="fill" />
+                       <Image
+                         alt="/"
+                         src={theme === 'light' ? '/linkedin_light.png' : '/linkedin_dark.png'}
+                         fill
+                         sizes="100vw" />
                     </div>
                     <Link href={""}>
-                      <a>LinkedIn</a>
+                      LinkedIn
                     </Link>
                   
                 </div>
@@ -36,10 +40,14 @@ const Socials = () => {
                 <div className="flex flex-col items-center justify-center p-2 space-x-2 md:flex-row">
 
                   <div className="relative w-8 h-8">
-                  <Image alt="/" src={theme === 'light' ? '/mail_light.png' : '/mail_dark.png'} layout="fill" />
+                  <Image
+                    alt="/"
+                    src={theme === 'light' ? '/mail_light.png' : '/mail_dark.png'}
+                    fill
+                    sizes="100vw" />
                     </div>
                     <Link href={""}>
-                      <a>Email</a>
+                      Email
                     </Link>
                   
                 </div>
@@ -48,10 +56,14 @@ const Socials = () => {
                 <div className="flex flex-col items-center justify-center p-2 space-x-2 md:flex-row">
 
                   <div className="relative w-8 h-8 md:h-10 md:w-10">
-                  <Image alt="" src={theme === 'light' ? '/phone_light.png' : '/phone_dark.png'} layout="fill" />
+                  <Image
+                    alt=""
+                    src={theme === 'light' ? '/phone_light.png' : '/phone_dark.png'}
+                    fill
+                    sizes="100vw" />
                     </div>
                     <Link href={""}>
-                      <a>Phone</a>
+                      Phone
                     </Link>
                   
                 </div>
@@ -60,10 +72,14 @@ const Socials = () => {
                 <div className="flex flex-col items-center justify-center p-2 space-x-2 md:flex-row">
 
                   <div className="relative w-8 h-8 md:h-10 md:w-10">
-                  <Image alt="/" src={theme === 'light' ? '/instagram_light.png' : '/instagram_dark.png'} layout="fill" />
+                  <Image
+                    alt="/"
+                    src={theme === 'light' ? '/instagram_light.png' : '/instagram_dark.png'}
+                    fill
+                    sizes="100vw" />
                     </div>
                     <Link href={""}>
-                      <a>Instagram</a>
+                      Instagram
                     </Link>
                   
                 </div>
@@ -72,10 +88,14 @@ const Socials = () => {
                 <div className="flex flex-col items-center justify-center p-2 space-x-2 md:flex-row">
 
                   <div className="relative w-8 h-8 md:h-10 md:w-10">
-                  <Image alt="" src={theme === 'light' ? '/youtube.png' : '/youtube_dark.png'} layout="fill" />
+                  <Image
+                    alt=""
+                    src={theme === 'light' ? '/youtube.png' : '/youtube_dark.png'}
+                    fill
+                    sizes="100vw" />
                     </div>
                     <Link href={""}>
-                      <a>Youtube</a>
+                      Youtube
                     </Link>
                   
                 </div>
@@ -93,7 +113,7 @@ const Socials = () => {
 
     </div>
     </section>
-  )
+  );
 }
 
 export default Socials
