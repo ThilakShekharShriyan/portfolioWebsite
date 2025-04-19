@@ -1,33 +1,63 @@
-import React from 'react'
-import { useTheme } from "next-themes"
-import Link from "next/link"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-import Image from "next/image"
 const CenterIntro = () => {
-    return (
-        <div className='px-10 py-24 m-10'>
+  return (
+    <section className="relative snap-start h-screen w-full overflow-hidden">
 
-            <div className='w-full'>
-                <div className='flex flex-col items-center w-full md:flex-row md:justify-center'>
-                    <div className="">
-                        <div className="">
-                            <span className="text-2xl font-semibold text-center md:font-normal md:text-5xl">Hi ! My name is Thilak Shriyan</span>
+      {/* Fullscreen Background Image */}
+      <Image
+        src="/DSCF3010.JPEG"
+        alt="Thilak Shriyan"
+        layout="fill"
+        objectFit="cover"
+        priority
+        className="z-0"
+      />
 
-                        </div>
-                        <span className="text-xl md:text-3xl">Computer Science Engineer</span>
-                    </div>
-                    <div className="flex items-center justify-between w-max">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
 
-                    <Image alt="" src="/some.png" height="300" width="300" className="self-end h-72"></Image>
+      {/* Centered Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4">
+        <h1 className="text-4xl md:text-6xl font-bold">Hi! I'm Thilak Shriyan</h1>
+        <p className="text-xl md:text-2xl mt-3">Computer Science Engineer</p>
 
-                    </div>
+        <Link href="/resume.pdf" download>
+          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold shadow-lg transition-all duration-300">
+            Download Resume
+          </button>
+        </Link>
+      </div>
 
-                </div>
-            </div>
+      {/* Sticky Bottom Icon */}
+      {/* <Link href="/" className="fixed bottom-4 right-4 z-50">
+        <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden shadow-lg border-2 border-white dark:border-gray-800">
+        <Image
+          src="/some.png"
+          href ="/"
+          alt="Profile icon"
+          layout="fill"
+          objectFit="cover"
+        />
         </div>
-    )
-}
+      </Link> */}
+      {/* Sticky Bottom Icon */}
+      <Link href="/">
+      <div className="fixed bottom-4 right-4 w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden shadow-lg border-2 border-white dark:border-gray-800 z-50">
+        <Image
+          src="/some.png"
+          href ="/"
+          alt="Profile icon"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      </Link>
+      
+    </section>
+  );
+};
 
-export default CenterIntro
-
-
+export default CenterIntro;

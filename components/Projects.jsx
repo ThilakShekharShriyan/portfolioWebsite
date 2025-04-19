@@ -6,15 +6,16 @@ import Image from 'next/image'
 const Projects = () => {
     const { theme, setTheme } = useTheme()
     return (
-        <div className='w-full'>
+        <section id="projects" className="scroll-mt-24">
+            <div className='w-full'>
 
-            
-            
+
+
                 <div className='flex items-start px-10 py-8 space-x-2'>
                     <span className='text-3xl font-semibold md:text-4xl dark:text-slate-300'>Personal</span>
                     <span className='text-3xl font-semibold text-slate-600 dark:text-white md:text-4xl'>Projects</span>
                 </div>
-                
+
                 <div className='p-5 m-5 border-4 rounded-lg'>
                     <div className='flex items-start space-x-2 '>
                         <span className='text-2xl font-semibold md:text-2xl dark:text-slate-300'>Research</span>
@@ -41,52 +42,53 @@ const Projects = () => {
                     </div>
                 </div>
 
-            
 
 
-            <div className='flex flex-col justify-between md:space-x-5 md:flex-row '>
-                <div className='p-5 m-5 border-4 rounded-lg md:w-1/2'>
-                    <div className='flex items-start space-x-2 '>
-                        <span className='text-2xl font-semibold md:text-2xl dark:text-slate-300'>Image Caption </span>
-                        <span className='text-2xl font-semibold text-slate-600 dark:text-white md:text-2xl'>Generator </span>
-                    </div>
-                    <div className='flex items-start space-x-2 '>
-                        <span className='text-base font-semibold text-slate-600 dark:text-white md:text-xl'>Natural Language Processing</span>
-                    </div>
-                    <div className='flex flex-col items-center justify-center md:flex-row'>
 
-                        <div className=''>
-
-                            <p>
-                                Developed a Web Application using Flask and wrote a back end model using VGG19 based CNN. Vectorized the images and mapped them with their captions, thus helping predict captions for any given image.
-                            </p>
+                <div className='flex flex-col justify-between md:space-x-5 md:flex-row '>
+                    <div className='p-5 m-5 border-4 rounded-lg md:w-1/2'>
+                        <div className='flex items-start space-x-2 '>
+                            <span className='text-2xl font-semibold md:text-2xl dark:text-slate-300'>Image Caption </span>
+                            <span className='text-2xl font-semibold text-slate-600 dark:text-white md:text-2xl'>Generator </span>
                         </div>
+                        <div className='flex items-start space-x-2 '>
+                            <span className='text-base font-semibold text-slate-600 dark:text-white md:text-xl'>Natural Language Processing</span>
+                        </div>
+                        <div className='flex flex-col items-center justify-center md:flex-row'>
 
+                            <div className=''>
+
+                                <p>
+                                    Developed a Web Application using Flask and wrote a back end model using VGG19 based CNN. Vectorized the images and mapped them with their captions, thus helping predict captions for any given image.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className='p-5 m-5 border-4 rounded-lg md:w-1/2'>
+                        <div className='flex items-start space-x-2 '>
+                            <span className='text-2xl font-semibold md:text-2xl dark:text-slate-300'>Covid-19  </span>
+                            <span className='text-2xl font-semibold text-slate-600 dark:text-white md:text-2xl'>Chest XRay Detection</span>
+                        </div>
+                        <div className='flex items-start space-x-2 '>
+                            <span className='text-base font-semibold text-slate-600 dark:text-white md:text-xl'> Deep Learning</span>
+                        </div>
+                        <div className='flex flex-col items-center justify-center md:flex-row'>
+
+                            <div className=''>
+
+                                <p>
+                                    Detecting the presence of covid19 in patients’ chest X-ray images, using VGG19 based CNN.
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <div className='p-5 m-5 border-4 rounded-lg md:w-1/2'>
-                    <div className='flex items-start space-x-2 '>
-                        <span className='text-2xl font-semibold md:text-2xl dark:text-slate-300'>Covid-19  </span>
-                        <span className='text-2xl font-semibold text-slate-600 dark:text-white md:text-2xl'>Chest XRay Detection</span>
-                    </div>
-                    <div className='flex items-start space-x-2 '>
-                        <span className='text-base font-semibold text-slate-600 dark:text-white md:text-xl'> Deep Learning</span>
-                    </div>
-                    <div className='flex flex-col items-center justify-center md:flex-row'>
 
-                        <div className=''>
 
-                            <p>
-                                Detecting the presence of covid19 in patients’ chest X-ray images, using VGG19 based CNN.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-
-
-        </div>
+        </section>
     )
 }
 

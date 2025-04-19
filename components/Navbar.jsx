@@ -11,7 +11,7 @@ export const NavigationBar = () => {
     const { theme, setTheme } = useTheme()
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="sticky top-0 bg-white p-3 dark:bg-[#121212] z-50">
+        <div className="sticky top-0 bg-[#f8f8f8f9] p-3 dark:bg-[#0a0a0a] z-50">
             <nav className="w-full ">
                 <div className="w-full">
                     <div className="flex items-center w-full ">
@@ -59,7 +59,7 @@ export const NavigationBar = () => {
                                     </Link>
 
                                     <Link
-                                        href=""
+                                        href="#socials"
                                         activeClass="Contact"
                                         to="work"
                                         smooth={true}
@@ -186,9 +186,10 @@ export const NavigationBar = () => {
 
                                     <li>
                                         <Link
-                                            href="/"
+                                            href="#socials"
                                             activeClass="work"
                                             to="work"
+                                            scroll={false}
                                             smooth={true}
                                             offset={50}
                                             duration={500}

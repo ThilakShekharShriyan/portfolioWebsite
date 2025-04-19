@@ -6,7 +6,8 @@ import Image from 'next/image'
 const Socials = () => {
   const { theme, setTheme } = useTheme()
   return (
-    <div className='py-24'>
+    <section id='socials'>
+      <div className='py-24'>
       <div className='w-full'>
 
         <div className='flex flex-col items-center justify-center md:flex-row md:justify-evenly '>
@@ -91,6 +92,7 @@ const Socials = () => {
 
 
     </div>
+    </section>
   )
 }
 

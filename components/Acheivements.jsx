@@ -2,7 +2,7 @@ import React from 'react'
 
 const Acheivements = () => {
     return (
-        <div className='py-24 '>
+        <div className='py-24 h-screen '>
             
             <div className='flex items-start w-full px-10 py-8 space-x-2'>
                 <span className='text-2xl font-semibold md:text-4xl dark:text-slate-300'>Career Path </span>
@@ -21,7 +21,7 @@ const Acheivements = () => {
                 </div>
                 <div className="relative flex items-center justify-center w-full h-full col-span-1">
                     <div className="w-1 h-full bg-[#b28bf5] dark:bg-[#60C689]"></div>
-                    <div className="absolute z-10 w-6 h-6 text-center rounded-full bg-[#b28bf5] dark:bg-[#60C689]">1</div>
+                    <div className="absolute z-10 w-6 h-6 text-center rounded-full bg-[#b28bf5] dark:bg-[#60C689]">3</div>
                 </div>
                 <div className="w-full h-full col-span-4"></div>
 
@@ -65,7 +65,7 @@ growth , revenue, and exposure.
                 </div>
                 <div className="relative flex items-center justify-center w-full h-full col-span-1">
                     <div className="w-1 h-full bg-[#b28bf5] dark:bg-[#60C689]"></div>
-                    <div className="absolute z-10 w-6 h-6 text-center rounded-full bg-[#b28bf5] dark:bg-[#60C689]">3</div>
+                    <div className="absolute z-10 w-6 h-6 text-center rounded-full bg-[#b28bf5] dark:bg-[#60C689]">1</div>
                 </div>
                 <div className="w-full h-full col-span-4"></div>
             </div>
