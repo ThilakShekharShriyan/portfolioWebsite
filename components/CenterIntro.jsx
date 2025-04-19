@@ -17,7 +17,7 @@ const CenterIntro = () => {
           objectFit: "cover"
         }} />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
+      <div className="absolute inset-0 bg-white bg-opacity-40 z-10" />
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4">
         <h1 className="text-4xl md:text-6xl font-bold">Hi! I'm Thilak Shriyan</h1>
